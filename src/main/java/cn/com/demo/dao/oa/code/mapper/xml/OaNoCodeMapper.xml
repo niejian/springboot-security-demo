@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.demo.dao.oa.code.mapper.OaNoCodeMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="cn.com.demo.dao.oa.code.entity.OaNoCode">
+        <id column="codeid" property="codeid" />
+        <result column="command_name" property="commandName" />
+        <result column="type_code" property="typeCode" />
+        <result column="command_type" property="commandType" />
+        <result column="increasse_rule" property="increasseRule" />
+        <result column="last_time" property="lastTime" />
+        <result column="code_num" property="codeNum" />
+        <result column="remark" property="remark" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        codeid, command_name, type_code, command_type, increasse_rule, last_time, code_num, remark
+    </sql>
+
+    <select id="getAll" resultType="cn.com.demo.dao.oa.code.entity.OaNoCode">
+        SELECT * FROM  oa_no_code where codeid = 2
+    </select>
+</mapper>

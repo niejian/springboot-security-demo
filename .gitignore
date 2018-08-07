@@ -1,0 +1,27 @@
+target/
+.settings/
+*.classpath
+*.log
+*.log.*
+*.qqconnect.log*
+.project
+.metadata/
+.idea/*
+target/
+.settings/
+*.classpath
+*.log
+*.log.*
+*.qqconnect.log*
+.project
+.metadata/
+.idea/*
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
